@@ -5,7 +5,7 @@ using namespace std;
 void resta(int val1, int val2);
 int producto(int val1, int val2);
 int suma(int val1, int val2);
-int division(int val1, int val2);
+float division(int val1, int val2);
 
 int main() {
     int num1, num2, resultado;
@@ -46,7 +46,11 @@ int suma(int val1, int val2) {
     return val1 + val2;
 }
 
-int division(int val1, int val2) {
-
-    return val1 / val2;
+float division(int val1, int val2) {
+    if (val2 == 0) {
+        cout << "No se puede dividir entre cero." << endl;
+        return 0;
+    }
+    float re = (val1 / val2);
+    return re;
 }

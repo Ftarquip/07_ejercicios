@@ -7,6 +7,7 @@ int resto(int mayor, int menor);
 
 int main(){
     int num1, num2;
+    cout << "ingrese 2 numeros enteros: ";
     cin >> num1 >> num2;
     int mayor, menor;
 
@@ -18,15 +19,15 @@ int main(){
         menor = num1;
     }
 
-    cout << cociente(mayor, menor) << endl;
-    cout << resto(mayor, menor) << endl;
+    cout << "Cociente: " << cociente(mayor, menor) << endl;
+    cout << "Resto: " <<resto(mayor, menor) << endl;
     return 0;
 }
 
 int cociente(int mayor, int menor) {
     int c = 0;
     while (mayor >= menor) {
-        mayor=mayor - menor;
+        mayor -=menor;
         c++;
     }
     return c;

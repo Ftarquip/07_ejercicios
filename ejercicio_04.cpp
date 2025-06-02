@@ -7,6 +7,8 @@ int main(){
     cin >> num;
     if(perfecto(num)==num){
         cout <<"El numero es perfecto";
+    }else{
+        cout <<"El numero no es perfecto";
     }
     return 0;
 }

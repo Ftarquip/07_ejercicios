@@ -10,7 +10,7 @@ int main() {
 
     fibonacci(n, suma);
 
-    cout << "Suma total: " << suma << endl;//aun no funcional
+    cout << "Suma total: " << suma << endl;//funcional
     return 0;
 }
 

@@ -7,9 +7,10 @@ int mcm(int a, int b);
 
 int main() {
     int num1, num2;
+    cout << "Ingrese dos numeros: ";
     cin >> num1 >> num2; 
-    cout << mcd(num1, num2) << endl;
-    cout << mcm(num1, num2) << endl;
+    cout <<"El MCD de "<< num1 << " y " << num2 << " es " << mcd(num1, num2) << endl;
+    cout <<"El MCM de "<< num1 << " y " << num2 << " es " << mcm(num1, num2) << endl;
 
     return 0;
 }
